@@ -25,12 +25,8 @@ const VIDEO_DIR = './qa_video';
     console.log(`Navigating to ${APP_URL}...`);
     await page.goto(APP_URL);
 
-    // --- Your "QA Test" Goes Here ---
-    // Example: Check if the login page <form> exists
-    console.log('Verifying login page content...');
-    await page.waitForSelector('form');
-    await page.fill('input[type="email"]', 'test@example.com');
-    await page.click('button[type="submit"]');
+    // --- Record the whole website ---
+    console.log('Capturing the website...');
     
     // Give it a second to show the result
     await page.waitForTimeout(2000); 
