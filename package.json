@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "build": "echo \"No build required for static HTML\"",
+    "start": "serve -l 3000",
+    "test": "node qa-test.js"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.56.1"
+    "@playwright/test": "^1.56.1",
+    "serve": "^14.2.0"
   }
 }
